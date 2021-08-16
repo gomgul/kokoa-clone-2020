@@ -1,0 +1,141 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+    margin-bottom: 30px;
+    margin-top:18px;
+    margin-left:20px;
+    margin-right:20px;
+  }
+  
+  .screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  .screen-header__icons span {
+    margin-left: 25px;
+  }
+  
+  @keyframes rotateCog {
+    from {
+      transform: none;
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .screen-header__icons .fa-cog:hover {
+    animation: rotateCog 1s linear infinite;
+  }
+
+  
+  @keyframes rotateCog1 {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  .screen-header__icons .fa-search:hover {
+    animation: rotateCog1 1s linear infinite;
+  }
+  @keyframes headShake {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    6.5% {
+      -webkit-transform: translateX(-6px) rotateY(-9deg);
+      transform: translateX(-6px) rotateY(-9deg);
+    }
+  
+    18.5% {
+      -webkit-transform: translateX(5px) rotateY(7deg);
+      transform: translateX(5px) rotateY(7deg);
+    }
+  
+    31.5% {
+      -webkit-transform: translateX(-3px) rotateY(-5deg);
+      transform: translateX(-3px) rotateY(-5deg);
+    }
+  
+    43.5% {
+      -webkit-transform: translateX(2px) rotateY(3deg);
+      transform: translateX(2px) rotateY(3deg);
+    }
+  
+    50% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+
+
+
+  .screen-header__icons .fa-music:hover {
+    animation: headShake 1s linear infinite;
+  }
+
+
+  @-webkit-keyframes wobble {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    15% {
+      -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+  
+    30% {
+      -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    45% {
+      -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    60% {
+      -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .screen-header__icons .fa-comment-dots:hover {
+    animation: wobble 1s linear infinite;
+
+  }
